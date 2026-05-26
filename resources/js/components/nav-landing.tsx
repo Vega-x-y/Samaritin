@@ -45,12 +45,13 @@ export default function NavLanding() {
           </Button>
           <div className="flex items-center justify-end gap-4">
             {auth.user ? (
-              <Link
-                href={dashboardUrl}
-                className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
-              >
-                Tableau de bord
-              </Link>
+              <Button variant="outline" className='w-full'>
+                <Link
+                  href={dashboardUrl}
+                  >
+                  Tableau de bord
+                </Link>
+              </Button>
               ) : (
                 <>
                   <Button variant="ghost">
@@ -107,12 +108,13 @@ export default function NavLanding() {
                 </Button>
                 <Separator/>
                 {auth.user ? (
-                  <Link
-                    href={dashboardUrl}
-                    className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
-                  >
-                    Tableau de bord
-                  </Link>
+                  <Button variant="outline" className='w-full'>
+                    <Link
+                      href={dashboardUrl}
+                    >
+                      Tableau de bord
+                    </Link>
+                  </Button>
                   ) : (
                     <>
                       <Button variant="outline" className='w-full'>
