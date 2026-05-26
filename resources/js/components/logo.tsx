@@ -1,52 +1,41 @@
 export default function Logo() {
-    return(
+    return (
         <>
-            <div className="w-full h-10 bg-black flex items-center justify-center overflow-hidden relative">
+            <div className="relative flex h-10 w-full items-center justify-center overflow-hidden bg-black">
+                <div className="absolute left-[-250px] h-[700px] w-[700px] rounded-full bg-orange-900/30 blur-3xl"></div>
 
-    <div className="absolute left-[-250px] w-[700px] h-[700px] bg-orange-900/30 rounded-full blur-3xl"></div>
+                <div className="z-10 flex items-center gap-14">
+                    <div className="relative flex items-center">
+                        <div className="relative flex h-44 w-44 items-center justify-center rounded-full border-[10px] border-white">
+                            <div className="flex h-32 w-32 items-center justify-center rounded-full border-[6px] border-orange-500">
+                                <div className="h-7 w-7 rounded-full bg-orange-500"></div>
+                            </div>
+                        </div>
 
-    <div className="flex items-center gap-14 z-10">
+                        <div className="h-5 w-40 rounded-r-md bg-white"></div>
 
-        <div className="relative flex items-center">
+                        <div className="absolute top-[95px] right-6 flex gap-3">
+                            <div className="h-10 w-5 rounded-b-md bg-white"></div>
+                            <div className="h-10 w-5 rounded-b-md bg-orange-500"></div>
+                            <div className="h-10 w-5 rounded-b-md bg-white"></div>
+                        </div>
+                    </div>
 
-        <div className="relative w-44 h-44 rounded-full border-[10px] border-white flex items-center justify-center">
+                    <div className="h-44 w-[2px] bg-gray-600"></div>
 
-            <div className="w-32 h-32 rounded-full border-[6px] border-orange-500 flex items-center justify-center">
+                    <div className="flex flex-col">
+                        <h1 className="font-serif text-7xl font-bold tracking-[10px] text-white">
+                            SAMARITAIN
+                        </h1>
 
-            <div className="w-7 h-7 bg-orange-500 rounded-full"></div>
+                        <p className="mt-4 text-xl tracking-[10px] text-gray-300">
+                            VIVEZ SEREINEMENT
+                        </p>
 
+                        <div className="mt-5 h-[4px] w-72 bg-orange-500"></div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div className="w-40 h-5 bg-white rounded-r-md"></div>
-
-        <div className="absolute right-6 top-[95px] flex gap-3">
-            <div className="w-5 h-10 bg-white rounded-b-md"></div>
-            <div className="w-5 h-10 bg-orange-500 rounded-b-md"></div>
-            <div className="w-5 h-10 bg-white rounded-b-md"></div>
-        </div>
-
-    </div>
-
-    <div className="w-[2px] h-44 bg-gray-600"></div>
-
-    <div className="flex flex-col">
-
-      <h1 className="text-white text-7xl font-serif tracking-[10px] font-bold">
-        SAMARITAIN
-      </h1>
-
-      <p className="text-gray-300 tracking-[10px] text-xl mt-4">
-        VIVEZ SEREINEMENT
-      </p>
-
-      <div className="w-72 h-[4px] bg-orange-500 mt-5"></div>
-
-    </div>
-
-    </div>
-
-    </div>
         </>
-    )
+    );
 }
